@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/child_item_hieght"
+        android:id="@+id/imageView2"
+
+        android:src="@drawable/frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:id="@+id/text_device"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff1f1f1f" />
+
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+
+        android:text="Medium Text"
+        android:id="@+id/text_modeli"
+        android:layout_below="@+id/text_device"
+        android:layout_alignStart="@+id/text_device"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+
+        android:text="Medium Text"
+        android:id="@+id/text_brand"
+        android:layout_below="@+id/text_modeli"
+        android:layout_alignStart="@+id/text_modeli"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ცალი"
+        android:id="@+id/text_count_child"
+        android:layout_above="@+id/text_srulad"
+        android:layout_marginBottom="6dp"
+        android:layout_alignStart="@+id/text_srulad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="სრულად ნახვა"
+        android:id="@+id/text_srulad"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignStart="@+id/text_brand"
+        android:layout_marginBottom="17dp" />
+
+    <ImageView
+        android:layout_width="@dimen/child_imig_width"
+        android:layout_height="@dimen/child_imig_hieght"
+        android:id="@+id/imageView3"
+        android:layout_marginEnd="22dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/text_device"
+        android:scaleType="centerInside"
+        android:src="@drawable/noimage" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Geolab Devices</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">dzebna</string>
+    <string name="title_activity_detailspage">detailspage</string>
+
+</resources>

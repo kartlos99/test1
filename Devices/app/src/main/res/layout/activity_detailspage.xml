@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="diakonidze.kartlos.devises.detailspage"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="10">
+            <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView_dedails"
+            android:src="@drawable/noimage"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/img_tr"
+            android:src="@drawable/gamchvirvale"
+
+            android:layout_alignBottom="@id/imageView_dedails"
+            android:scaleType="centerCrop"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="6">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:id="@+id/imageView4"
+            android:background="@drawable/gamchvirvale" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_device_2"
+            android:textSize="30sp"
+            android:text="Device"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4">
+
+            <TextView
+                android:id="@+id/text_info"
+                android:text="info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:textSize="18sp" />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
